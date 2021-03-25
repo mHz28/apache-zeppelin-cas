@@ -53,6 +53,17 @@ securityManager.sessionManager.globalSessionTimeout = 86400000
 
 ````
 
+* apply multiple users in Shiro:
+````
+[main]
+anyofrolesuser = org.apache.zeppelin.utils.AnyOfRolesUserAuthorizationFilter
+
+[urls]
+
+/apilogin = authc, anyofrolesuser[admin, user1]
+
+````
+
 * mvn clean package -DskipTests
 
 ## Start Service
