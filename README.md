@@ -10,12 +10,12 @@ Configure and install Shiro in Zeppelin
 * edit shiro.ini add config below:
 ````
 [main]
-
 sessionManager = org.apache.shiro.web.session.mgt.DefaultWebSessionManager
 securityManager.sessionManager = $sessionManager
 securityManager.sessionManager.globalSessionTimeout = 86400000
 
-shiro.loginUrl = /api/shiro-cas
+[urls]
+/api/shiro-cas
 
 ````
 * cd $INSTALL_DIR/zeppelin-web
