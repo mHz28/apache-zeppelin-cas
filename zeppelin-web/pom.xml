@@ -44,6 +44,13 @@
     <plugin.frontend.npmDownloadRoot>https://registry.npmjs.org/npm/-/</plugin.frontend.npmDownloadRoot>
   </properties>
 
+  <dependencies>
+  <dependency>
+    <groupId>org.apache.shiro</groupId>
+    <artifactId>shiro-cas</artifactId>
+    <version>1.2.3</version>
+  </dependency>
+</dependencies>
   <build>
     <plugins>
       <plugin>
