@@ -18,7 +18,7 @@ Configure and install Shiro in Zeppelin
     <version>1.2.3</version>
   </dependency>
 </dependencies>
-
+````
 
 * cd to $INSTALL_DIR/zeppelin-web/
 * mvn clean package -DskipTests
@@ -28,7 +28,6 @@ Configure and install Shiro in Zeppelin
 ## Start Service
 
 * $INSTALL_DIR/bin/zeppelin-daemon.sh start
-
 # Apache Zeppelin
 
 **Documentation:** [User Guide](https://zeppelin.apache.org/docs/latest/index.html)<br/>
