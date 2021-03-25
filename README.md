@@ -10,7 +10,7 @@ Configure and install Shiro in Zeppelin
 * cd $INSTALL_DIR/zeppelin-web
 * touch pom.xml
 * add the following config:
-
+````
   <dependencies>
   <dependency>
     <groupId>org.apache.shiro</groupId>
@@ -28,7 +28,6 @@ Configure and install Shiro in Zeppelin
 ## Start Service
 
 * $INSTALL_DIR/bin/zeppelin-daemon.sh start
-
 
 # Apache Zeppelin
 
