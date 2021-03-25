@@ -1,3 +1,35 @@
+# Apache Zeppelin Shiro install
+
+Configure and install Shiro in Zeppelin
+
+## Installation
+
+* git clone https://github.com/apache/zeppelin.git
+* change dir to $INSTALL_DIR/conf
+* mv shiro.ini.template shiro.ini
+* cd $INSTALL_DIR/zeppelin-web
+* touch pom.xml
+* add the following config:
+
+  <dependencies>
+  <dependency>
+    <groupId>org.apache.shiro</groupId>
+    <artifactId>shiro-cas</artifactId>
+    <version>1.2.3</version>
+  </dependency>
+</dependencies>
+
+
+* cd to $INSTALL_DIR/zeppelin-web/
+* mvn clean package -DskipTests
+* cd to $INSTALL_DIR/zeppelin-web-angular/
+* mvn clean package -DskipTests
+
+## Start Service
+
+* $INSTALL_DIR/bin/zeppelin-daemon.sh start
+
+
 # Apache Zeppelin
 
 **Documentation:** [User Guide](https://zeppelin.apache.org/docs/latest/index.html)<br/>
